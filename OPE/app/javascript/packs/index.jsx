@@ -4,28 +4,11 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-
-const Hello = props => (
-  <div>
-    <h1 style={{textAlign: "center", color: "red", fontSize: "70px"}}>TELA DE LOGIN</h1>
-    <footer>
-    <p style={{textAlign: "center", color: "blue", marginTop: "37%"}}>&copy; 2019 LillyShoes</p>
-    </footer>
-  </div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
+import App from '../components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <App/>,
     document.body.appendChild(document.createElement('div')),
   )
 })
